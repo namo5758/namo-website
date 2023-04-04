@@ -4,6 +4,7 @@
     {{> basehead customtitle="HOME"}}
 </head>
 <body>
+    <div id="preloader"></div>
     <nav class="blur">
         <nav class="menu-bar">
             <div class="group">
@@ -41,5 +42,11 @@
     <script>
         AOS.init();
     </script>
+    <script>
+    let loader = document.getElementById("preloader")
+    window.addEventListener("load", function(){
+      loader.style.display = "none"
+    })
+</script>
 </body>
 </html>
