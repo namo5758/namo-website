@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(bg2.webp);
+    font-family: 'Assistant', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.menu-bar {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+.item {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+  
+.discord-profile {
+    position: relative;
+    top: 15px;
+    right: 3px;
+    size: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+.item-titel {
+    margin: 20px
+}
+.blue-button {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 250px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+  .blue-button {
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
+}
+.content{
+    position: relative;
+    width: 35%;
+    margin: auto;
+    top: 100px;
+    background-color: rgba(241, 79, 127, 0.5);
+    border-radius: 10%;
+}
+.dd {
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
