@@ -5,6 +5,9 @@ body {
     font-family: 'Assistant', sans-serif;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font-family: 'Jost', sans-serif;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 a {
     text-decoration: none;
@@ -58,7 +61,6 @@ a {
     width: 35%;
     margin: auto;
     top: 100px;
-    background-color: rgba(241, 79, 127, 0.5);
     border-radius: 10%;
 }
 .dd {
@@ -66,3 +68,31 @@ a {
     text-align: center;
     color: white;
 }
+.project {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 500px;
+}
+.bot-stats {
+    background-color: rgb(35, 36, 40);
+    display: inline-flex;
+    width: 300px;
+}
+.profile {
+    border-radius: 50%;
+    width: 80px;
+}
+.bot-content {
+    position: relative;
+    top: 600px;
+    margin: auto;
+    background-color: rgb(43, 45, 49);
+    max-width: 400px;
+    border-radius: 15%;
+}
+.blue-button {
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
+  }
