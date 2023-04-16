@@ -3,39 +3,27 @@
 <head>
     {{> basehead customtitle="HOME"}}
 </head>
-<body>
-    <div id="preloader"></div>
-    <nav class="blur">
-        <nav class="menu-bar">
-            <div class="group">
-            </div>
-            <div class="group">
-                <a class="item" href="/">HOME</a>
-                <a class="item" href="https://github.com/namo5758">GITHUB</a>
-                <a class="item title">! ℕ𝔸𝕄𝕆#5179</a>
-                <img src="/static/discord.webp" class="discord-profile"> 
+<body onload="sss()">
+    <div class="lds-ripple" id="preloader"><div></div><div></div></div>
+    <div class="pagecontent fade-content" id="pagecontent">
+        <nav class="blur">
+            <nav class="menu-bar">
+                <div class="group">
+                </div>
+                <div class="group">
+                    <a class="item" href="/">HOME</a>
+                    <a class="item" href="https://github.com/namo5758">GITHUB</a>
+                    <a class="item title">! ℕ𝔸𝕄𝕆#5179</a>
+                    <img src="https://cdn.discordapp.com/avatars/503839000805769216/f136775c2ccdef93f5cde88918a0c506.webp?size=128" class="discord-profile"> 
+            </nav>
         </nav>
-    </nav>
-    <div class="content">
-        <div class="dd" data-aos="fade-up" data-aos-duration="1000">
-            <h1>My name is Kittipon Thanee</h1>
-            <p>I'm 15 years old, I'm Student at Pakkred Secondary School</p>
-            <p>Skills: C, Nodejs, Python, MySQL, HTML, CSS</p>
+        <div class="content">
+            <div class="dd" data-aos="fade-up" data-aos-duration="1000">
+                <h1>My name is Kittipon Thanee</h1>
+                <p>I'm 15 years old, I'm Student at Pakkred Secondary School</p>
+                <p>Skills: C, Nodejs, Python, MySQL, HTML, CSS</p>
+            </div>
         </div>
-    </div>
-    <div class="project" data-aos="fade-down" data-aos-duration="1000">
-        <h1>รอยิงพี่ Discord bot สุดตึง</h1>
-        <button class="blue-button"><a href="https://discord.com/api/oauth2/authorize?client_id=721287837898768456&permissions=8&scope=bot">Invite</a></button>
-        <h3>funtion ตามด้านล่างนี้</h3>
-    </div>
-    <div class="bot-content" data-aos="fade-right" data-aos-duration="1000">
-        <div class="item">
-            <h1>/ping</h1>
-            <p>จะส่งคำว่า " Pong!!!" กลับมาให้คุณ</p>
-        </div>
-        <div class="item">
-            <h1>/nuke</h1>
-            <p>จะสร้างห้องรัวๆจำนวน 500 ห้อง</p>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -43,10 +31,14 @@
         AOS.init();
     </script>
     <script>
-    let loader = document.getElementById("preloader")
-    window.addEventListener("load", function(){
-      loader.style.display = "none"
-    })
-</script>
+        function sss() {
+            let content = setTimeout(showpage, 2000);
+        }
+
+        function showpage(){
+            document.getElementById('preloader').style.display = 'none';
+            document.getElementById('pagecontent').style.display = 'block'
+        }
+    </script>
 </body>
 </html>
