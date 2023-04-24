@@ -1,12 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(bg2.webp);
     font-family: 'Assistant', sans-serif;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font-family: 'Jost', sans-serif;
-    background-color: black;
-    background-repeat: no-repeat;
+    background-color: white;
     background-attachment: fixed;
 }
 .pagecontent {
@@ -24,7 +22,7 @@ body {
   }
   .lds-ripple div {
     position: absolute;
-    border: 4px solid #fff;
+    border: 4px solid #8369d0;
     opacity: 1;
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -72,61 +70,73 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-a {
-    text-decoration: none;
-    color: white;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
 }
-.menu-bar {
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-.item {
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 20px 10px;
+.header .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
-  
-.discord-profile {
-    position: relative;
-    top: 15px;
-    right: 3px;
-    size: 10px;
-    width: 50px;
-    border-radius: 50%;
+
+.header .item a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
 }
-.item-titel {
-    margin: 20px
+.header .item p {
+  margin: 10px;
+  color: black;
 }
-.blue-button {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 11pt;
-    border-radius: 3px;
-    cursor: pointer;
-    height: 45px;
-    width: 250px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-    margin: 10px;
+
+.header .item img {
+  border-radius: 50%;
+  max-width: 50px;
 }
-  .blue-button {
-    background-color: #7289da;
-    border: 2px solid #7289da;
-    color: #fff;
+.content-position {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
 }
-.content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.content h1 {
+  font-size: 50px;
+  font-weight: 700px;
+  line-height: 1.2;
+  font-family: 'Kanit', sans-serif;
+  color: #8369d0; 
 }
-.dd {
-    margin: 10px;
-    text-align: center;
-    color: white;
+.content p {
+  font-size: 22px;
+  font-weight: 300px;
+}
+.btn-project {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background-color: #8369d0;
+  border: 2px solid #8369d0;
+  border-radius: 8px;
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-project:hover {
+  background-color: #c77ed2;
+  border: 2px solid #c77ed2;
+}
+.footer p {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
