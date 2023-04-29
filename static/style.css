@@ -102,17 +102,20 @@ body {
   align-items: center;
   padding: 0 10%;
 }
-.content h1 {
+.myname {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #c77ed2 0%, #c37dd2 50% , #8369d0 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   font-size: 50px;
   font-weight: 700px;
   line-height: 1.2;
   font-family: 'Kanit', sans-serif;
-  color: #8369d0; 
   animation: textdd 1s 3;
 }
 .content p {
   font-size: 22px;
-  font-weight: 300px;
+  font-weight: 900;
 }
 .btn-project {
   display: inline-flex;
@@ -120,9 +123,8 @@ body {
   align-items: center;
   width: 150px;
   height: 100%;
-  background-color: #8369d0;
-  border: 2px solid #8369d0;
-  border-radius: 8px;
+  background: linear-gradient(to right, #c77ed2 0%,#c37dd2 50%, #8369d0 100%);
+  border-radius: 1rem;
   color: white;
   font-size: 19px;
   text-decoration: none;
@@ -130,16 +132,9 @@ body {
 }
 
 .btn-project:hover {
-  background-color: #c77ed2;
-  border: 2px solid #c77ed2;
+  background: linear-gradient(to bottom, #c77ed2 0%, #c37dd2 50% , #8369d0 100%);
 }
-.footer p {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+
 
 
 .rawyingpee {
@@ -191,7 +186,40 @@ body {
 .rawyingpee .content-raw h1 {
   font-family: 'Kanit', sans-serif;
 }
+.invite-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.invite-bot button {
+  display: inline-block;
+  font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  width: 250px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.invite-bot button {
+  background-color: #7289da;
+  border: 2px solid #7289da;
+  color: #fff;
+}
+
+
+.invite-bot a {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+}
 
 @keyframes textdd {
   0% {
