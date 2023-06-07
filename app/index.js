@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const dotenv = require("dotenv").config();
 const app = express();
-const port = process.env.PORT ?? 8080;
+const port = 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'hbs');
